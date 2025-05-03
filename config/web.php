@@ -10,6 +10,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@webroot' => __DIR__ . '/../web', // Explicitly define @webroot
     ],
     'components' => [
         'request' => [
@@ -25,6 +26,10 @@ $config = [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
+        ],
+        'assetManager' => [
+        'basePath' => '@webroot/assets',
+        'baseUrl' => '@web/assets',
         ],
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,

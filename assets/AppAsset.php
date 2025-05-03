@@ -19,13 +19,14 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
+    public $js = [
+    ];
     public $css = [
         'css/site.css',
-    ];
-    public $js = [
+        '@web/../node_modules/bootstrap-icons/font/bootstrap-icons.css' // Adjust the path based on where you place the files
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap5\BootstrapAsset'
+        'yii\bootstrap5\BootstrapAsset' // Or yii\bootstrap4\BootstrapAsset
     ];
 }
