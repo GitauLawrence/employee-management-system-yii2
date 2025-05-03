@@ -2,9 +2,10 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\data\ActiveDataProvider; // Added this line
 
 /* @var $this yii\web\View */
-/* @var $employees app\models\Employee[] */
+/* @var $dataProvider yii\data\ActiveDataProvider */ // Updated this line
 
 $this->title = 'Employees';
 $this->params['breadcrumbs'][] = $this->title;
@@ -26,12 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?= GridView::widget([
-        'dataProvider' => new \yii\data\ArrayDataProvider([
-            'allModels' => $employees,
-            'pagination' => [
-                'pageSize' => 10,
-            ],
-        ]),
+        'dataProvider' => $dataProvider, // Changed this line
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 

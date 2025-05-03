@@ -5,19 +5,38 @@ namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\Employee;
+use yii\data\ActiveDataProvider;
 
 class EmployeeController extends Controller
 {
+    // /**
+    //  * Lists all Employee models.
+    //  * @return string
+    //  */
+    // public function actionIndex()
+    // {
+    //     $employees = Employee::find()->all();
+
+    //     return $this->render('index', [
+    //         'employees' => $employees,
+    //     ]);
+    // }*/
+
     /**
      * Lists all Employee models.
      * @return string
      */
     public function actionIndex()
     {
-        $employees = Employee::find()->all();
+        $dataProvider = new ActiveDataProvider([
+            'query' => Employee::find(),
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+        ]);
 
         return $this->render('index', [
-            'employees' => $employees,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
