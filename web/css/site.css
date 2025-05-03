@@ -50,6 +50,141 @@ a.desc:after {
     color: #999;
 }
 
+/* Existing rules */
+.btn-blood-red {
+    color: #fff;
+    background-color: #8B0000;
+    border-color: #8B0000;
+}
+
+.btn-blood-red:hover {
+    background-color: #6A0000;
+    border-color: #6A0000;
+    color: #fff;
+}
+
+.btn-blood-red:focus {
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.5);
+}
+
+.btn-blood-red:active {
+    background-color: #4A0000;
+    border-color: #4A0000;
+    color: #fff;
+}
+
+/* More custom color buttons */
+.btn-bright-orange {
+    color: #000;
+    background-color: #FF8C00;
+    border-color: #FF8C00;
+}
+
+.btn-bright-orange:hover {
+    background-color: #E67E00;
+    border-color: #E67E00;
+    color: #000;
+}
+
+.btn-bright-orange:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.5);
+}
+
+.btn-bright-orange:active {
+    background-color: #CC6A00;
+    border-color: #CC6A00;
+    color: #000;
+}
+
+.btn-bright-purple {
+    color: #fff;
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+}
+
+.btn-bright-purple:hover {
+    background-color: #7A1EA0;
+    border-color: #7A1EA0;
+    color: #fff;
+}
+
+.btn-bright-purple:focus {
+    box-shadow: 0 0 0 0.2rem rgba(138, 43, 226, 0.5);
+}
+
+.btn-bright-purple:active {
+    background-color: #5A1470;
+    border-color: #5A1470;
+    color: #fff;
+}
+
+.btn-lime-green {
+    color: #000;
+    background-color: #32CD32;
+    border-color: #32CD32;
+}
+
+.btn-lime-green:hover {
+    background-color: #22B122;
+    border-color: #22B122;
+    color: #000;
+}
+
+.btn-lime-green:focus {
+    box-shadow: 0 0 0 0.2rem rgba(50, 205, 50, 0.5);
+}
+
+.btn-lime-green:active {
+    background-color: #198A19;
+    border-color: #198A19;
+    color: #fff;
+}
+
+.btn-teal {
+    color: #fff;
+    background-color: #008080;
+    border-color: #008080;
+}
+
+.btn-teal:hover {
+    background-color: #006666;
+    border-color: #006666;
+    color: #fff;
+}
+
+.btn-teal:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.5);
+}
+
+.btn-teal:active {
+    background-color: #004D4D;
+    border-color: #004D4D;
+    color: #fff;
+}
+
+/* Neon Green */
+.btn-neon-green {
+    color: #000; /* Use black text for better contrast */
+    background-color: #00FF00; /* Bright, pure green */
+    border-color: #00FF00;
+}
+
+.btn-neon-green:hover {
+    background-color: #00CC00; /* Slightly darker on hover */
+    border-color: #00CC00;
+    color: #000;
+}
+
+.btn-neon-green:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.5);
+}
+
+.btn-neon-green:active {
+    background-color: #009900; /* Even darker on active */
+    border-color: #009900;
+    color: #fff;
+}
+
 .error-summary {
     color: #a94442;
     background: #fdf7f7;

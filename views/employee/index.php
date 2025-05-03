@@ -39,31 +39,29 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template' => '{view} {update} {delete}',
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
-                        return Html::a('<i class="bi bi-eye-fill"></i>', $url, [
-                            'class' => 'btn-info',
+                        return Html::a('View', $url, [
+                            'class' => 'btn btn-neon-green btn-sm',
                             'title' => Yii::t('yii', 'View'),
-                            'data-bs-toggle' => 'tooltip',
                         ]);
                     },
                     'update' => function ($url, $model, $key) {
-                        return Html::a('<i class="bi bi-pencil-square"></i>', $url, [
-                            'class' => 'btn-primary ms-2', // ms-2 for a little spacing
+                        return Html::a('Edit', $url, [
+                            'class' => 'btn btn-primary btn-sm ms-2', // ms-2 for a little spacing
                             'title' => Yii::t('yii', 'Update'),
-                            'data-bs-toggle' => 'tooltip',
                         ]);
                     },
                     'delete' => function ($url, $model, $key) {
-                        return Html::a('<i class="bi bi-trash-fill"></i>', $url, [
-                            'class' => 'btn-danger ms-2', // ms-2 for a little spacing
+                        return Html::a('Delete', $url, [
+                            'class' => 'btn btn-blood-red btn-sm ms-2',
                             'title' => Yii::t('yii', 'Delete'),
                             'data' => [
                                 'confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
                                 'method' => 'post',
                             ],
-                            'data-bs-toggle' => 'tooltip',
                         ]);
                     },
                 ],
+                'options' => ['style' => 'width: 200px;'], // Set a fixed width for the ActionColumn
             ],
         ],
         'options' => ['class' => 'table table-striped table-bordered'], // Basic table styling
