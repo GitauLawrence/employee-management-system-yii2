@@ -175,6 +175,29 @@ a.desc:after {
     color: #000;
 }
 
+/* Lilac Button */
+.btn-lilac {
+    color: #fff; /* White text for contrast */
+    background-color: #C8A2C8; /* Light purple/lilac */
+    border-color: #C8A2C8;
+}
+
+.btn-lilac:hover {
+    background-color: #B886B8; /* Slightly darker on hover */
+    border-color: #B886B8;
+    color: #fff;
+}
+
+.btn-lilac:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200, 162, 200, 0.5); /* Add a focus ring */
+}
+
+.btn-lilac:active {
+    background-color: #9A7B9A; /* Even darker on active */
+    border-color: #9A7B9A;
+    color: #fff;
+}
+
 .btn-neon-green:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.5);
 }

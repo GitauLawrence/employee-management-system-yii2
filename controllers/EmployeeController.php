@@ -48,10 +48,10 @@ class EmployeeController extends Controller
      */
     public function actionView($id)
     {
-        $employee = $this->findModel($id);
+        $model = $this->findModel($id);
 
         return $this->render('view', [
-            'employee' => $employee,
+            'model' => $model,
         ]);
     }
 
